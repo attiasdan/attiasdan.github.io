@@ -1,2 +1,2 @@
 Site:
-[attiasdan.github.io](https://attiasdan.github.io/){:target="_blank"}
+<a href="http://attiasdan.github.io/" target="_blank">attiasdan.github.io</a>
