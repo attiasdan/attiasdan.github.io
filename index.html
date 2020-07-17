@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="professor, designer gráfico, web designer, programador, daniel attias">
-    <meta name="description" content="Atualmente acadêmico de licenciatura em computação">
+    <meta name="description" content="Acadêmico de licenciatura em computação">
     <meta name="author" content="Daniel Attias">
 
     <!-- Bootstrap CSS -->
@@ -13,51 +13,102 @@
     
     <link rel="icon" type="image/png" href="imgs/favicon.png" />
     <title>Daniel Attias</title>
+    <style type="text/css">
+    html, body {
+        height: 100vh;
+    }
+    .h1 {font-family: "Montserrat Extrabold";}
+    .h2 {font-family: "Montserrat Extrabold";}
+    .h3 {font-family: "Roboto";}
+    #perfil {
+        margin-top: 4px;
+        margin-bottom: 14px;
+        height: 200px;
+        border-radius: 100%;
+    }
+    .container{
+        padding-top: 22px;
+        padding-bottom: 26px;
+    }
+    .patternTopo {
+        background-image: url("imgs/cubos.jpg");
+        background-size: 1500px;
+    }
+    .patternJogos {
+        background-image: url("imgs/labirinto.jpg");
+        background-size: 600px;
+    }
+    .patternContato {
+        background-image: url("imgs/(29).jpg");
+        background-size: 500px;
+    }
+    </style>
   </head>
+  <body>    
 
-  <body class="container-fluid">
-    
-    <div class="row container-fluid bg-dark text-light">
-        <div class="container">
-            <p class="h1">Daniel Attias</p>
-            <p class="h3">Acadêmico de Licenciatura em Computação - UNIR</p>
-            <p class="h3">Designer Gráfico e Web</p>
+    <section class="row">
+        <div class="container-fluid bg-light text-light patternTopo">
+            <div class="container"><center>
+                <img src="imgs/20200715_205426.jpg" id="perfil">
+                <p class="h1">Daniel Attias</p>
+                <p class="h4">Designer Gráfico e Web<br>Licenciando em Computação - UNIR</p></center>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="row container-fluid bg-warning text-light">
-        <div class="container">
-            <nav class="nav nav-pills nav-fill">
-                <a class="nav-item nav-link text-dark" href="#">Active</a>
-                <a class="nav-item nav-link text-dark" href="#">Much longer nav link</a>
-                <a class="nav-item nav-link text-dark" href="#">Link</a>
-                <a class="nav-item nav-link text-dark" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </nav>
+
+    <section class="row" style="height: 100%;">
+        <div class="container-fluid bg-dark text-light">
+            <div class="container"0>
+                <center><p class="h2">PORTFÓLIO</p></center>
+                <p class="h3">Artes impressas | Artes digitais | Websites</p>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="row container-fluid bg-primary">
-        <div class="container">
-            <p class="h2">Contato</p>
-            <p class="h3">Instagram: <a href="https://www.instagram.com/attiasdan/"></a></p>
-            <p class="h3">Linkedin: <a href="https://www.linkedin.com/in/daniel-a-323165103/"></a></p>
-            <p class="h3">Github: <a href=""></a></p>
+
+    <section class="row" style="height: 100%;" id="jogos">
+        <div class="container-fluid text-light patternJogos">
+            <div class="container bg-dark">
+                <p class="h2">JOGOS</p><br>
+                <p class="h3">Jogos educativos para aumentar a lógica e raciocínio:</p>
+                <p class="h4">  > Underrun: https://js13kgames.com/games/underrun/index.html<br>
+                                > Reversi<br>
+                                > Campo Minado<br>
+                                > Sokoban<br>
+                                > Jogo da Memória<br>
+                                > 3 ou mais<br>
+                                <br>A maioria tem no RachaCuca.<br>
+                </p>
+                <br>
+                <i><p class="h4">Observação: Os jogos aqui referenciados são todos de propriedade de terceiros, apenas estou linkando eles aqui.</p></i>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="container">
-        <p class="h1"><b>Página em desenvolvimento.</b></p>
-    </div>
-
-    <div class="row container-fluid bg-dark align-bottom">
-        <div class="container">
-            <p class="h6 text-light text-right">Desenvolvido por Daniel Attias.</p>
+    <section class="row">
+        <div class="container-fluid patternContato">
+            <div class="container">
+                <p class="h2 text-light">CONTATO</p>
+                <p class="h3"><a href="" target="_blank">WhatsApp</a></p>
+                <p class="h3"><a href="https://www.instagram.com/attiasdan/" target="_blank">Instagram</a></p>
+                <p class="h3"><a href="https://www.linkedin.com/in/daniel-a-323165103/" target="_blank">Linkedin</a></p>
+                <p class="h3"><a href="https://github.com/attiasdan" target="_blank">GitHub</a></p>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <section class="row">
+        <div class="container-fluid bg-dark">
+            <div class="container">
+                <p class="h5 text-light text-right">Website desenvolvido por Daniel Attias - v1 - 2020.</p>
+            </div>
+        </div>
+    </section>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>
