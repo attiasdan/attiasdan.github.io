@@ -35,12 +35,8 @@
         background-size: 1500px;
     }
     .patternJogos {
-        background-image: url("imgs/labirinto.jpg");
+        background-image: url("imgs/(16).jpg");
         background-size: 600px;
-    }
-    .patternContato {
-        background-image: url("imgs/(29).jpg");
-        background-size: 500px;
     }
     </style>
   </head>
@@ -59,47 +55,68 @@
 
     <section class="row" style="height: 100%;">
         <div class="container-fluid bg-dark text-light">
-            <div class="container"0>
+            <div class="container">
                 <center><p class="h2">PORTFÓLIO</p></center>
-                <p class="h3">Artes impressas | Artes digitais | Websites</p>
+                
+                <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link active h4" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Artes impressas</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link h4" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Artes digitais</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link h4" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Websites</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                  </div>
+
             </div>
         </div>
     </section>
 
 
     <section class="row" style="height: 100%;" id="jogos">
-        <div class="container-fluid text-light patternJogos">
+        <div class="container-fluid text-light patternJogos" style="padding-top: 100px;">
             <div class="container bg-dark">
-                <p class="h2">JOGOS</p><br>
-                <p class="h3">Jogos educativos para aumentar a lógica e raciocínio:</p>
-                <p class="h4">  > Underrun: https://js13kgames.com/games/underrun/index.html<br>
-                                > Reversi<br>
-                                > Campo Minado<br>
-                                > Sokoban<br>
-                                > Jogo da Memória<br>
-                                > 3 ou mais<br>
-                                <br>A maioria tem no RachaCuca.<br>
-                </p>
-                <br>
-                <i><p class="h4">Observação: Os jogos aqui referenciados são todos de propriedade de terceiros, apenas estou linkando eles aqui.</p></i>
-            </div>
-        </div>
-    </section>
-
-    <section class="row">
-        <div class="container-fluid patternContato">
-            <div class="container">
-                <p class="h2 text-light">CONTATO</p>
-                <p class="h3"><a href="" target="_blank">WhatsApp</a></p>
-                <p class="h3"><a href="https://www.instagram.com/attiasdan/" target="_blank">Instagram</a></p>
-                <p class="h3"><a href="https://www.linkedin.com/in/daniel-a-323165103/" target="_blank">Linkedin</a></p>
-                <p class="h3"><a href="https://github.com/attiasdan" target="_blank">GitHub</a></p>
+                <div class="col-sm">
+                    <p class="h2">JOGOS</p><br>
+                    <p class="h3">Jogos educativos para aumentar a lógica e raciocínio:</p>
+                    <p class="h4">  > <a href="https://js13kgames.com/games/underrun/index.html">Underrun</a><br>
+                                    > <a href="">Reversi</a><br>
+                                    > <a href="">Campo Minado</a><br>
+                                    > <a href="">Sokoban</a><br>
+                                    > <a href="">Jogo da Memória</a><br>
+                                    > <a href="">3 ou mais</a><br>
+                                    <br>A maioria tem no RachaCuca.<br>
+                    </p>
+                    <br>
+                    <i><p class="h4">Observação: Os jogos aqui referenciados são todos de propriedade de terceiros, apenas estou linkando eles aqui.</p></i>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="row">
         <div class="container-fluid bg-dark">
+            <div class="container">
+                <div class="col-sm">
+                    <p class="h2 text-light">CONTATO</p>
+                    <p class="h3"><a href="" target="_blank">WhatsApp</a></p>
+                    <p class="h3"><a href="https://www.instagram.com/attiasdan/" target="_blank">Instagram</a></p>
+                    <p class="h3"><a href="https://www.linkedin.com/in/daniel-a-323165103/" target="_blank">Linkedin</a></p>
+                    <p class="h3"><a href="https://github.com/attiasdan" target="_blank">GitHub</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="container-fluid" style="background:#2B2C30;">
             <div class="container">
                 <p class="h5 text-light text-right">Website desenvolvido por Daniel Attias - v1 - 2020.</p>
             </div>
