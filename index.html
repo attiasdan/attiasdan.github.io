@@ -49,7 +49,7 @@
         * {margin: 0;padding: 0;box-sizing: border-box;}
         
         html,body {
-            background-color:#DEDECC;
+            background-image: linear-gradient(to bottom right, #333333, #111111);
             min-height: 100vh;
             overflow-x: hidden !important;
             /*pra tirar espaço em branco do lado direito*/
@@ -72,26 +72,16 @@
             border-color: #FFFF99;
             float: right;
         }
-        
         #perfil:hover {
             -webkit-filter: none;
             filter: none;
-            /* content: url("perfil2.png"); */
         }
-        
         #meuNome {
             color: white;
         }
-        
         #bio {
-            /* color: #FFFF99; */
             color:#DEDECC;
             padding-top:30px;
-            /* align-items: center;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center; */
         }
         
         .container {
@@ -100,14 +90,15 @@
         }
         
         #patternTopo {
-            background-image: linear-gradient(to bottom right, #333333, #111111);
+            background-image: url("inspiration-geometry.png");
         }
+
         a {color: #f5e613;}
         a:hover {color: white;}
         
         #menu ul {
             padding: 0px;
-            margin: 0px;
+            margin-bottom:15px;
             list-style: none;
         }
         #menu ul li {
@@ -115,43 +106,51 @@
             cursor: pointer;
         }
         #menu ul li a {
-            padding: 2px 10px;
+            padding: 8px 12px;
             display: inline-block;
             /* visual do link*/
-            color: #999;
+            color: white;
             text-decoration: none;
-            border-top: 3px solid rgba(0, 0, 0, 0);
-            border-left: 3px solid rgba(0, 0, 0, 0);
-            border-right: 3px solid rgba(0, 0, 0, 0);
-            border-radius: 20px;
+            border-top: 2px solid rgba(0, 0, 0, 0);
+            border-bottom: 2px solid rgba(0, 0, 0, 0);
+            border-left: 2px solid rgba(0, 0, 0, 0);
+            border-right: 2px solid rgba(0, 0, 0, 0);
         }
         #menu ul li a:hover {
-            border-left: 3px solid #FFFF99;
-            border-right: 3px solid #FFFF99;
+            border-top: 2px solid #fbff00;
+            border-bottom: 2px solid #fbff00;
+            border-left: 2px solid rgba(0, 0, 0, 0);
+            border-right: 2px solid rgba(0, 0, 0, 0);
         }
-        
+
         p.azul-claro {
             color: #FFFF99;
         }
         
         section.portfolio {
+            background-image: url("notebook-dark.png");
+            /* background-size: 100%; */
+            /* background-repeat: repeat-y; */
             -webkit-box-shadow: 0px 7px 50px 0px rgba(0, 0, 0, 0.4);
             -moz-box-shadow: 0px 7px 50px 0px rgba(0, 0, 0, 0.4);
             box-shadow: 0px 7px 50px 0px rgba(0, 0, 0, 0.4);
             min-height: 100%;
-            background-color: #444;
+            background-color: #222;
             padding-bottom: 10px;
             padding-top: 17px;
         }
         
         section.servicos {
+            background-image: url("otis-redding.png");
             padding-top: 30px;
             padding-bottom: 18px;
+            color: white;
         }
         section.ferramentas {
+            background-image: url("paper-fibers.png");
             padding-top: 30px;
             padding-bottom: 30px;
-            background-color: #333;
+            background-color: white;
         }
         section.servicos ul, section.ferramentas ul {
             list-style-type: square;
@@ -183,8 +182,8 @@
 
         .box-port {
             width: 100%;
-            background-color: rgb(63, 63, 63);
-            color: #000;
+            background-color: white;
+            color: #111;
             border-radius: 8px;
             font-family: 'Roboto';
             /* text-align: center; */
@@ -201,7 +200,6 @@
             border-radius: 8px 8px 0 0;
         }
         .box-port .descricaoProjeto {
-            color: #fff;
             text-align: left;
             margin-left: 12px;
             margin-top: 5px;
@@ -217,8 +215,8 @@
 
         /*Accordion*/
         .accordion {
-            background-color: rgb(255, 255, 255);
-            color: #000000;
+            background-color: rgb(66, 66, 66);
+            color: white;
             cursor: pointer;
             padding: 18px;
             width: 100%;
@@ -229,11 +227,11 @@
             transition: 0.4s;
         }
         .active, .accordion:hover {
-            background-color: #e4e4e4;
+            background-color: rgb(95, 95, 95);
         }
         .accordion:after {
             content: '\002B';
-            color:#000000;
+            color:white;
             font-weight: bold;
             float: right;
             margin-left: 5px;
@@ -243,7 +241,7 @@
         }
         .panel {
             color: #000000;
-            background-color: #c2c2c2;
+            background-color:#FFFF99;
             width: 100%;
             padding: 0 18px;
             max-height: 0;
@@ -330,8 +328,8 @@
     <section class="row servicos">
         <div class="container">
             <div class="col">
-                <p class="h1 text-center" style="color: #444;">SERVIÇOS</p><br>
-                <h4 style="color: #444;">
+                <p class="h1 text-center azul-claro">SERVIÇOS</p><br>
+                <h4>
                     <ul>
                         <li>Criação de websites (personal pages, blogs...)</li>
                         <li>Produção de artes para meios impressos e digitais</li>
@@ -345,7 +343,7 @@
         </div>
     </section>
 
-    <section class="row ferramentas text-white">
+    <section class="row ferramentas text-dark">
         <div class="container">
             <div class="col">
                 <h2>FERRAMENTAS que utilizo</h2>
@@ -520,7 +518,7 @@
 
         function printProjRecentes() {
             document.getElementById("view-portfolio").innerHTML = originalProjRecentes;
-            document.getElementById("link-projrecentes").style.borderColor = "#FFFF99";
+            document.getElementById("link-projrecentes").style.borderColor = "#888888";
             document.getElementById("link-artdigital").style.borderColor = "";
             document.getElementById("link-artimpress").style.borderColor = "";
             document.getElementById("link-websites").style.borderColor = "";
@@ -528,7 +526,7 @@
         function printArtDigital(){
             document.getElementById("view-portfolio").innerHTML = originalArtDigital;
             document.getElementById("link-projrecentes").style.borderColor = "";
-            document.getElementById("link-artdigital").style.borderColor = "#FFFF99";
+            document.getElementById("link-artdigital").style.borderColor = "#888888";
             document.getElementById("link-artimpress").style.borderColor = "";
             document.getElementById("link-websites").style.borderColor = "";
         }
@@ -536,7 +534,7 @@
             document.getElementById("view-portfolio").innerHTML = originalArtImpress;
             document.getElementById("link-projrecentes").style.borderColor = "";
             document.getElementById("link-artdigital").style.borderColor = "";
-            document.getElementById("link-artimpress").style.borderColor = "#FFFF99";
+            document.getElementById("link-artimpress").style.borderColor = "#888888";
             document.getElementById("link-websites").style.borderColor = "";
         }
         function printWebSites(){
@@ -544,7 +542,7 @@
             document.getElementById("link-projrecentes").style.borderColor = "";
             document.getElementById("link-artdigital").style.borderColor = "";
             document.getElementById("link-artimpress").style.borderColor = "";
-            document.getElementById("link-websites").style.borderColor = "#FFFF99";
+            document.getElementById("link-websites").style.borderColor = "#888888";
         }
 
         let acc = document.getElementsByClassName("accordion");
