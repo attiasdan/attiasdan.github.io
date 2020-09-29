@@ -46,7 +46,7 @@
             src: url('DancingScript-Medium.ttf');
         }
 
-        * {margin: 0;padding: 0;}
+        * {margin: 0;padding: 0;box-sizing: border-box;}
         
         html,body {
             background-color:#DEDECC;
@@ -185,13 +185,16 @@
             width: 100%;
             background-color: rgb(63, 63, 63);
             color: #000;
-            border-radius: 15px;
+            border-radius: 8px;
             font-family: 'Roboto';
             /* text-align: center; */
             padding-bottom: 3px;
             margin-top: 10px;
             margin-bottom: 10px;
             box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        }
+        .box-port:hover{
+            border: 1px solid #FFFF99;
         }
         .box-port img {
             width: 100%;
@@ -403,7 +406,7 @@
     <section class="row contato text-center">
         <div class="container">
             <p class="h1 text-white">ENTRE EM CONTATO</p>
-            <p class="h4 text-white cursiva"><em>Vamos fazer uma parceria!</em></p><br>
+            <p class="h4 text-white cursiva">Vamos fazer uma parceria!</p><br>
             <div class="row">
                 <div class="col-sm-2"></div>
                 <div class="col-sm-2" style="margin-bottom: 30px;">
