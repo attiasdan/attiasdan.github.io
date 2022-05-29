@@ -16,254 +16,14 @@
     <!-- Cor da barra de endereço do Windows Phone Browser Mobile: -->
     <meta name="msapplication-navbutton-color" content="#333333">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
     
-    <link rel="icon" type="image/png" href="favicon.png" />
     <title>Programador Web - Designer Gráfico - Instrutor de Tecnologias da Informação e Comunicação - Freelance</title>
-    <style>
-    
-        @font-face {
-            font-family: 'Poppins Medium';
-            src: url('Poppins/Poppins-Medium.ttf');
-        }
-    /* Fonts grossas */
-        @font-face {
-            font-family: 'Poppins Bold';
-            src: url('Poppins/Poppins-Bold.ttf');
-            /* font-weight: normal;
-            font-style: normal; */
-        }
-        @font-face {
-            font-family: 'Poppins ExtraBold';
-            src: url('Poppins/Poppins-ExtraBold.ttf');
-        }
-    
-    /* Fim Fonts grossas */
-        @font-face {
-            font-family: 'DancingScript Medium';
-            src: url('DancingScript-Medium.ttf');
-        }
 
-        * {margin: 0;padding: 0;box-sizing: border-box;}
-        
-        html,body {
-            background-image: linear-gradient(to bottom right, #333333, #111111);
-            min-height: 100vh;
-            overflow-x: hidden !important;
-            /*pra tirar espaço em branco do lado direito*/
-            font-family: 'Poppins Medium', sans-serif;
-        }
-        
-        .h1 {font-family: 'Poppins ExtraBold', sans-serif;}
-        h2, .h2 {font-family: 'Poppins ExtraBold', sans-serif;}
-        .h3 {font-family: 'Poppins Bold', sans-serif;}
-        
-        #perfil {
-            -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
-            filter: gray;
-            margin-top: 4px;
-            margin-bottom: 14px;
-            border-radius: 100%;
-            border-style: solid;
-            border-width: 3px;
-            border-color: #FFFF99;
-            float: right;
-        }
-        /* #perfil:hover {
-            -webkit-filter: none;
-            filter: none;
-        } */
-        #meuNome {
-            color: white;
-        }
-        #bio {
-            color:#DEDECC;
-            padding-top:30px;
-        }
-        
-        .container {
-            padding-top: 22px;
-            padding-bottom: 20px;
-        }
-        
-        #patternTopo {
-            background-image: url("inspiration-geometry.png");
-        }
-
-        a {color: #f5e613;}
-        a:hover {color: white;}
-        
-        #menu ul {
-            padding: 0px;
-            margin-bottom:15px;
-            list-style: none;
-        }
-        #menu ul li {
-            display: inline;
-            cursor: pointer;
-        }
-        #menu ul li a {
-            padding: 8px 12px;
-            display: inline-block;
-            /* visual do link*/
-            color: white;
-            text-decoration: none;
-            border-top: 2px solid rgba(0, 0, 0, 0);
-            border-bottom: 2px solid rgba(0, 0, 0, 0);
-            border-left: 2px solid rgba(0, 0, 0, 0);
-            border-right: 2px solid rgba(0, 0, 0, 0);
-        }
-        #menu ul li a:hover {
-            border-top: 2px solid #fbff00;
-            border-bottom: 2px solid #fbff00;
-            border-left: 2px solid rgba(0, 0, 0, 0);
-            border-right: 2px solid rgba(0, 0, 0, 0);
-        }
-
-        p.azul-claro {
-            color: #FFFF99;
-        }
-        
-        section.portfolio {
-            background-image: url("notebook-dark.png");
-            /* background-size: 100%; */
-            /* background-repeat: repeat-y; */
-            -webkit-box-shadow: 0px 7px 50px 0px rgba(0, 0, 0, 0.4);
-            -moz-box-shadow: 0px 7px 50px 0px rgba(0, 0, 0, 0.4);
-            box-shadow: 0px 7px 50px 0px rgba(0, 0, 0, 0.4);
-            min-height: 100%;
-            background-color: #222;
-            padding-bottom: 10px;
-            padding-top: 17px;
-        }
-        
-        section.servicos {
-            background-image: url("otis-redding.png");
-            padding-top: 30px;
-            padding-bottom: 18px;
-            color: white;
-        }
-        section.ferramentas {
-            background-image: url("paper-fibers.png");
-            padding-top: 30px;
-            padding-bottom: 30px;
-            background-color: white;
-        }
-        section.servicos ul, section.ferramentas ul {
-            list-style-type: square;
-            margin-left:20px;
-        }
-        section.servicos h4 ul li{
-            padding-bottom:10px;
-        }
-        
-        section.contato {
-            padding-top: 25px;
-            /* background-color:rgb(0, 87, 158); */
-            background-color: #444;
-        }
-        section.contato a {
-            color: white;
-        }
-        
-        section.rodape {
-            background: #222;
-            /* border: 1px solid white;
-            border-bottom:none;
-            border-left:none;
-            border-right:none; */
-            font-size: 11pt;
-        }
-        
-        .cursiva{font-family:'DancingScript Medium';margin-top: -9px;}
-
-        .box-port {
-            width: 100%;
-            background-color: white;
-            color: #111;
-            border-radius: 8px;
-            font-family: 'Roboto';
-            /* text-align: center; */
-            padding-bottom: 3px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-        }
-        .box-port img {
-            width: 100%;
-            border-radius: 8px 8px 0 0;
-        }
-        .box-port .descricaoProjeto {
-            text-align: left;
-            margin-left: 12px;
-            margin-top: 5px;
-            margin-right: 3px;
-            margin-bottom: 5px;
-        }
-        
-        .sombraBox {
-            -webkit-box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.4);
-            -moz-box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.4);
-            box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.4);
-        }
-
-        /*Accordion*/
-        .accordion {
-            background-color: rgb(66, 66, 66);
-            color: white;
-            cursor: pointer;
-            padding: 18px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 15px;
-            transition: 0.4s;
-        }
-        .active, .accordion:hover {
-            background-color: rgb(95, 95, 95);
-        }
-        .accordion:after {
-            content: '\002B';
-            color:white;
-            font-weight: bold;
-            float: right;
-            margin-left: 5px;
-        }
-        .active:after {
-            content: "\2212";
-        }
-        .panel {
-            color: #000000;
-            background-color:#FFFF99;
-            width: 100%;
-            padding: 0 18px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.2s ease-out;
-        }
-
-        @media (max-width: 992px) {
-            #perfil {
-                float: inherit;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                margin-bottom: 10px;
-            }
-            #meuNome {
-                margin-top: 18px;
-                text-align: center;
-            }
-            #bio {
-                text-align: center;
-                padding-top:0;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -273,7 +33,7 @@
                 <div class="row">
                     <div class="col-lg-2"></div>
                     <div class="col-lg-3">
-                        <img src="perfil.png" id="perfil" alt="Perfil">
+                        <img src="./assets/img/perfil3.jpg" id="perfil" alt="Perfil">
                     </div>
                     <div class="col-lg-5" id="bio">
                         <span>
@@ -328,7 +88,7 @@
                 <p class="h1 text-center azul-claro">SERVIÇOS</p><br>
                 <h4>
                     <ul>
-                        <li>Criação, manutenção de websites (landing pages, personal pages, blogs, lojas virtuais...)</li>
+                        <li>Criação, manutenção de websites (landing pages, personal pages, blogs, lojas virtuais, sistemas de ensino-aprendizagem - AVA, e outros)</li>
                         <li>Produção de artes para meios impressos e digitais</li>
                         <li>Instrução de manuseo de programas de computador e equipamentos eletrônicos</li>
                         <li>Criação de slides personalizados</li>
@@ -439,128 +199,134 @@
         </div>
     </section>
 
+    
     <script type="text/javascript">
         let originalProjRecentes = `
-            <div class="col-sm">
-                <div class="box-port">
-                    <img src="portfolio/post5.png">
-                    <p class="descricaoProjeto">Material: Carrossel no Feed do Instagram<br>Ferramenta: PowerPoint</p>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="box-port">
-                    <img src="portfolio/post1.png">
-                    <p class="descricaoProjeto">Material: Carrossel no Feed do Instagram<br>Ferramenta: Photoshop</p>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="box-port">
-                    <img src="portfolio/post2.png">
-                    <p class="descricaoProjeto">Material: Carrossel no Feed do Instagram<br>Ferramenta: PowerPoint</p>
-                </div>
-            </div>`;
-        let originalArtDigital = `
-            <div class="col-sm">
-                <div class="box-port">
-                    <img src="portfolio/banner_cievs.png">
-                    <p class="descricaoProjeto">Material: Banner Digital<br>Ferramenta: Photoshop</p>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="box-port">
-                    <img src="portfolio/anuncio_thiago.png">
-                    <p class="descricaoProjeto">Material: Status no WhatsApp e Story no Instagram<br>Ferramenta: Photoshop</p>
-                </div>
-            </div>`;
-        let originalArtImpress = `
-            <div class="col-sm">
-                <div class="box-port">
-                    <img src="portfolio/CapaRelatorioAnualGestão.png">
-                    <p class="descricaoProjeto">Material: Capa<br>Ferramenta: Photoshop</p>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="box-port">
-                    <img src="portfolio/CapaPlanoDeContingenciaNovoCoronavírus.png">
-                    <p class="descricaoProjeto">Material: Capa<br>Ferramenta: Illustrator</p>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="box-port">
-                    <img src="portfolio/folderCievsExterno.png">
-                    <p class="descricaoProjeto">Material: Folder<br>Ferramenta: Photoshop</p>
-                </div>
-            </div>`;
-        let originalWebSites = `
-            <div class="col-sm">
-                <div class="box-port">
-                    <img src="portfolio/UBS.png">
-                    <p class="descricaoProjeto">Material: Links úteis para otimizar o andamento dos trabalhos internos inerentes de uma Unidade Básica de Saúde em Porto Velho-RO.<br>Ferramentas: Bootstrap, HTML, CSS.</p>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="box-port">
-                    <img src="portfolio/geradm.png">
-                    <p class="descricaoProjeto">Material: Links úteis para otimizar o andamento dos trabalhos internos inerentes ao setor onde estagiava no Detran-RO.<br>Ferramentas: HTML, CSS, JavaScript, Sublime Text, notepad.</p>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="box-port">
-                    <img src="portfolio/divadm.png">
-                    <p class="descricaoProjeto">Material: Links úteis para otimizar o andamento dos trabalhos internos inerentes ao setor onde estagiava no Detran-RO.<br>Ferramentas: HTML, CSS, JavaScript, Sublime Text, notepad.</p>
-                </div>
-            </div>`;
-        
-        //startup:
-        printProjRecentes();
+    <div class="col-sm">
+        <div class="box-port">
+        <img src="portfolio/post5.png">
+            <p class="descricaoProjeto">Material: Carrossel no Feed do Instagram<br>Ferramenta: PowerPoint</p>
+        </div>
+    </div>
+    <div class="col-sm">
+        <div class="box-port">
+            <img src="portfolio/post1.png">
+            <p class="descricaoProjeto">Material: Carrossel no Feed do Instagram<br>Ferramenta: Photoshop</p>
+        </div>
+    </div>
+    <div class="col-sm">
+        <div class="box-port">
+            <img src="portfolio/post2.png">
+            <p class="descricaoProjeto">Material: Carrossel no Feed do Instagram<br>Ferramenta: PowerPoint</p>
+        </div>
+    </div>`;
 
-        function printProjRecentes() {
-            document.getElementById("view-portfolio").innerHTML = originalProjRecentes;
-            document.getElementById("link-projrecentes").style.borderColor = "#888888";
-            document.getElementById("link-artdigital").style.borderColor = "";
-            document.getElementById("link-artimpress").style.borderColor = "";
-            document.getElementById("link-websites").style.borderColor = "";
-        }
-        function printArtDigital(){
-            document.getElementById("view-portfolio").innerHTML = originalArtDigital;
-            document.getElementById("link-projrecentes").style.borderColor = "";
-            document.getElementById("link-artdigital").style.borderColor = "#888888";
-            document.getElementById("link-artimpress").style.borderColor = "";
-            document.getElementById("link-websites").style.borderColor = "";
-        }
-        function printArtImpress(){
-            document.getElementById("view-portfolio").innerHTML = originalArtImpress;
-            document.getElementById("link-projrecentes").style.borderColor = "";
-            document.getElementById("link-artdigital").style.borderColor = "";
-            document.getElementById("link-artimpress").style.borderColor = "#888888";
-            document.getElementById("link-websites").style.borderColor = "";
-        }
-        function printWebSites(){
-            document.getElementById("view-portfolio").innerHTML = originalWebSites;
-            document.getElementById("link-projrecentes").style.borderColor = "";
-            document.getElementById("link-artdigital").style.borderColor = "";
-            document.getElementById("link-artimpress").style.borderColor = "";
-            document.getElementById("link-websites").style.borderColor = "#888888";
-        }
+let originalArtDigital = `
+    <div class="col-sm">
+        <div class="box-port">
+            <img src="portfolio/banner_cievs.png">
+            <p class="descricaoProjeto">Material: Banner Digital<br>Ferramenta: Photoshop</p>
+        </div>
+    </div>
+    <div class="col-sm">
+        <div class="box-port">
+            <img src="portfolio/anuncio_thiago.png">
+            <p class="descricaoProjeto">Material: Status no WhatsApp e Story no Instagram<br>Ferramenta: Photoshop</p>
+        </div>
+    </div>`;
+    
+let originalArtImpress = `
+    <div class="col-sm">
+        <div class="box-port">
+            <img src="portfolio/CapaRelatorioAnualGestão.png">
+            <p class="descricaoProjeto">Material: Capa<br>Ferramenta: Photoshop</p>
+        </div>
+    </div>
+    <div class="col-sm">
+        <div class="box-port">
+            <img src="portfolio/CapaPlanoDeContingenciaNovoCoronavírus.png">
+            <p class="descricaoProjeto">Material: Capa<br>Ferramenta: Illustrator</p>
+        </div>
+    </div>
+    <div class="col-sm">
+        <div class="box-port">
+            <img src="portfolio/folderCievsExterno.png">
+            <p class="descricaoProjeto">Material: Folder<br>Ferramenta: Photoshop</p>
+        </div>
+    </div>`;
+    
+let originalWebSites = `
+    <div class="col-sm">
+        <div class="box-port">
+            <img src="portfolio/UBS.png">
+            <p class="descricaoProjeto">Material: Links úteis para otimizar o andamento dos trabalhos internos inerentes de uma Unidade Básica de Saúde em Porto Velho-RO.<br>Ferramentas: Bootstrap, HTML, CSS.</p>
+        </div>
+    </div>
+    <div class="col-sm">
+        <div class="box-port">
+            <img src="portfolio/geradm.png">
+            <p class="descricaoProjeto">Material: Links úteis para otimizar o andamento dos trabalhos internos inerentes ao setor onde estagiava no Detran-RO.<br>Ferramentas: HTML, CSS, JavaScript, Sublime Text, notepad.</p>
+        </div>
+    </div>
+    <div class="col-sm">
+        <div class="box-port">
+            <img src="portfolio/divadm.png">
+            <p class="descricaoProjeto">Material: Links úteis para otimizar o andamento dos trabalhos internos inerentes ao setor onde estagiava no Detran-RO.<br>Ferramentas: HTML, CSS, JavaScript, Sublime Text, notepad.</p>
+        </div>
+    </div>`;
 
-        let acc = document.getElementsByClassName("accordion");
+printProjRecentes();
 
-        for (let i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            let panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            } 
-        });
-        }
+function printProjRecentes() {
+    document.getElementById("view-portfolio").innerHTML = originalProjRecentes;
+    document.getElementById("link-projrecentes").style.borderColor = "#888888";
+    document.getElementById("link-artdigital").style.borderColor = "";
+    document.getElementById("link-artimpress").style.borderColor = "";
+    document.getElementById("link-websites").style.borderColor = "";
+}
+function printArtDigital(){
+    document.getElementById("view-portfolio").innerHTML = originalArtDigital;
+    document.getElementById("link-projrecentes").style.borderColor = "";
+    document.getElementById("link-artdigital").style.borderColor = "#888888";
+    document.getElementById("link-artimpress").style.borderColor = "";
+    document.getElementById("link-websites").style.borderColor = "";
+}
+function printArtImpress(){
+    document.getElementById("view-portfolio").innerHTML = originalArtImpress;
+    document.getElementById("link-projrecentes").style.borderColor = "";
+    document.getElementById("link-artdigital").style.borderColor = "";
+    document.getElementById("link-artimpress").style.borderColor = "#888888";
+    document.getElementById("link-websites").style.borderColor = "";
+}
+function printWebSites(){
+    document.getElementById("view-portfolio").innerHTML = originalWebSites;
+    document.getElementById("link-projrecentes").style.borderColor = "";
+    document.getElementById("link-artdigital").style.borderColor = "";
+    document.getElementById("link-artimpress").style.borderColor = "";
+    document.getElementById("link-websites").style.borderColor = "#888888";
+}
+
+let acc = document.getElementsByClassName("accordion");
+
+for (let i = 0; i < acc.length; i++)
+{
+    acc[i].addEventListener("click", function()
+    {
+        this.classList.toggle("active");
+        let panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+    });
+}
     </script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/css/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>

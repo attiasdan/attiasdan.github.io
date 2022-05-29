@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'Poppins Medium';
+    src: url('../fontes/Poppins/Poppins-Medium.ttf');
+}
+/* Fonts grossas */
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url('../fontes/Poppins/Poppins-Bold.ttf');
+    /* font-weight: normal;
+    font-style: normal; */
+}
+@font-face {
+    font-family: 'Poppins ExtraBold';
+    src: url('../fontes/Poppins/Poppins-ExtraBold.ttf');
+}
+
+/* Fim Fonts grossas */
+@font-face {
+    font-family: 'DancingScript Medium';
+    src: url('../fontes/DancingScript-Medium.ttf');
+}
+
+* {margin: 0;padding: 0;box-sizing: border-box;}
+
+html,body {
+    background-image: linear-gradient(to bottom right, #333333, #111111);
+    min-height: 100vh;
+    overflow-x: hidden !important;
+    /*pra tirar espaço em branco do lado direito*/
+    font-family: 'Poppins Medium', sans-serif;
+}
+
+.h1 {font-family: 'Poppins ExtraBold', sans-serif;}
+h2, .h2 {font-family: 'Poppins ExtraBold', sans-serif;}
+.h3 {font-family: 'Poppins Bold', sans-serif;}
+
+#perfil {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+    margin-top: 4px;
+    margin-bottom: 14px;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #FFFF99;
+    float: right;
+}
+/* #perfil:hover {
+    -webkit-filter: none;
+    filter: none;
+} */
+#meuNome {
+    color: white;
+}
+#bio {
+    color:#DEDECC;
+    padding-top:30px;
+}
+
+.container {
+    padding-top: 22px;
+    padding-bottom: 20px;
+}
+
+#patternTopo {
+    background-image: url("../img/inspiration-geometry.png");
+}
+
+a {color: #f5e613;}
+a:hover {color: white;}
+
+#menu ul {
+    padding: 0px;
+    margin-bottom:15px;
+    list-style: none;
+}
+#menu ul li {
+    display: inline;
+    cursor: pointer;
+}
+#menu ul li a {
+    padding: 8px 12px;
+    display: inline-block;
+    /* visual do link*/
+    color: white;
+    text-decoration: none;
+    border-top: 2px solid rgba(0, 0, 0, 0);
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    border-left: 2px solid rgba(0, 0, 0, 0);
+    border-right: 2px solid rgba(0, 0, 0, 0);
+}
+#menu ul li a:hover {
+    border-top: 2px solid #fbff00;
+    border-bottom: 2px solid #fbff00;
+    border-left: 2px solid rgba(0, 0, 0, 0);
+    border-right: 2px solid rgba(0, 0, 0, 0);
+}
+
+p.azul-claro {
+    color: #FFFF99;
+}
+
+section.portfolio {
+    background-image: url("../img/notebook-dark.png");
+    /* background-size: 100%; */
+    /* background-repeat: repeat-y; */
+    -webkit-box-shadow: 0px 7px 50px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 7px 50px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 7px 50px 0px rgba(0, 0, 0, 0.4);
+    min-height: 100%;
+    background-color: #222;
+    padding-bottom: 10px;
+    padding-top: 17px;
+}
+
+section.servicos {
+    background-image: url("../img/otis-redding.png");
+    padding-top: 30px;
+    padding-bottom: 18px;
+    color: white;
+}
+section.ferramentas {
+    background-image: url("../img/paper-fibers.png");
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: white;
+}
+section.servicos ul, section.ferramentas ul {
+    list-style-type: square;
+    margin-left:20px;
+}
+section.servicos h4 ul li{
+    padding-bottom:10px;
+}
+
+section.contato {
+    padding-top: 25px;
+    /* background-color:rgb(0, 87, 158); */
+    background-color: #444;
+}
+section.contato a {
+    color: white;
+}
+
+section.rodape {
+    background: #222;
+    /* border: 1px solid white;
+    border-bottom:none;
+    border-left:none;
+    border-right:none; */
+    font-size: 11pt;
+}
+
+.cursiva{font-family:'DancingScript Medium';margin-top: -9px;}
+
+.box-port {
+    width: 100%;
+    background-color: white;
+    color: #111;
+    border-radius: 8px;
+    font-family: 'Roboto';
+    /* text-align: center; */
+    padding-bottom: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.box-port img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+.box-port .descricaoProjeto {
+    text-align: left;
+    margin-left: 12px;
+    margin-top: 5px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.sombraBox {
+    -webkit-box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.4);
+}
+
+/*Accordion*/
+.accordion {
+    background-color: rgb(66, 66, 66);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+.active, .accordion:hover {
+    background-color: rgb(95, 95, 95);
+}
+.accordion:after {
+    content: '\002B';
+    color:white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2212";
+}
+.panel {
+    color: #000000;
+    background-color:#FFFF99;
+    width: 100%;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+@media (max-width: 992px) {
+    #perfil {
+        float: inherit;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+    #meuNome {
+        margin-top: 18px;
+        text-align: center;
+    }
+    #bio {
+        text-align: center;
+        padding-top:0;
+    }
+}
