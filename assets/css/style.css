@@ -21,7 +21,9 @@
 }
 
 * {margin: 0;padding: 0;box-sizing: border-box;}
-
+html {
+  scroll-behavior: smooth;
+}
 html,body {
     background-image: linear-gradient(to bottom right, #333333, #111111);
     min-height: 100vh;
@@ -31,9 +33,18 @@ html,body {
 }
 
 .h1 {font-family: 'Poppins ExtraBold', sans-serif;}
-h2, .h2 {font-family: 'Poppins ExtraBold', sans-serif;}
+.h2 {font-family: 'Poppins ExtraBold', sans-serif;}
 .h3 {font-family: 'Poppins Bold', sans-serif;}
-
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
 #perfil {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -82,19 +93,17 @@ a:hover {color: white;}
 #menu ul li a {
     padding: 8px 12px;
     display: inline-block;
-    /* visual do link*/
     color: white;
     text-decoration: none;
+    border-radius: 50px;
     border-top: 2px solid rgba(0, 0, 0, 0);
     border-bottom: 2px solid rgba(0, 0, 0, 0);
     border-left: 2px solid rgba(0, 0, 0, 0);
     border-right: 2px solid rgba(0, 0, 0, 0);
 }
 #menu ul li a:hover {
-    border-top: 2px solid #fbff00;
-    border-bottom: 2px solid #fbff00;
-    border-left: 2px solid rgba(0, 0, 0, 0);
-    border-right: 2px solid rgba(0, 0, 0, 0);
+    border-top: 2px solid #888888;
+    border-bottom: 2px solid #888888;
 }
 
 p.azul-claro {
@@ -118,6 +127,7 @@ section.servicos {
     background-image: url("../img/otis-redding.png");
     padding-top: 30px;
     padding-bottom: 18px;
+    min-height: 80vh;
     color: white;
 }
 section.ferramentas {
@@ -160,7 +170,6 @@ section.rodape {
     color: #111;
     border-radius: 8px;
     font-family: 'Roboto';
-    /* text-align: center; */
     padding-bottom: 3px;
     margin-top: 10px;
     margin-bottom: 10px;
