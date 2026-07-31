@@ -1,359 +1,255 @@
-<!doctype html>
-<html lang="pt-br">
-
+﻿<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="keywords" content="programador web, desenvolvedor web, desenvolvedor front-end, desenvolvedor back-end, designer gráfico, web designer, programador, freelance, professor, instrutor, PHP, JavaScript, Java, C, C++, CSS, SQL">
-    <meta name="description" content="Programador Web & Designer Gráfico - Freelance">
-    <meta name="author" content="Daniel Attias">
-    <meta name="robots" content="index, follow">
-
-    <!-- Cor da barra de endereço do Chrome Browser Mobile: -->
-    <meta name="theme-color" content="#333333">
-    <!-- Cor da barra de endereço do iOS Safari Browser Mobile: -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#333333">
-    <!-- Cor da barra de endereço do Windows Phone Browser Mobile: -->
-    <meta name="msapplication-navbutton-color" content="#333333">
-
-    <link rel="stylesheet" href="./assets/css/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/normalize.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-
-    <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
-    
-    <title>Daniel Attias - Freelance: Programador Web, Designer Gráfico,Instrutor de Informática</title>
-
-</head>
-
-<body>
-    <span id="top"></span>
-    <div id="patternTopo">
-        <section class="row text-light">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-3">
-                        <img src="./assets/img/perfil3.jpg" id="perfil" alt="Perfil">
-                    </div>
-                    <div class="col-lg-5" id="bio">
-                        <span>
-                            <p class="h1" id="meuNome">Daniel Attias</p>
-                            <p class="h4">Programador Web<br>Designer Gráfico<br>Instrutor de TIC<br>Freelance</p>
-                        </span>
-                    </div>
-                    <div class="col-lg-2"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="row portfolio">
-            <div class="container text-light">
-
-                <p class="h1 text-center azul-claro" style="padding-bottom:17px;">PORTFÓLIO</p>
-
-                <nav id="menu" class="text-center">
-                    <ul>
-                        <li class="col-sm">
-                            <a id="link-projrecentes" onclick="printProjRecentes()">
-                            <span class="h3">projetos recentes</span>
-                            </a>
-                        </li>
-                        <li class="col-sm">
-                            <a id="link-artdigital" onclick="printArtDigital()">
-                            <span class="h3">artes digitais</span>
-                            </a>
-                        </li>
-                        <li class="col-sm">
-                            <a id="link-artimpress" onclick="printArtImpress()">
-                            <span class="h3">artes impressas</span>
-                            </a>
-                        </li>
-                        <li class="col-sm">
-                            <a id="link-websites" onclick="printWebSites()">
-                            <span class="h3">websites</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <div id="view-portfolio" class="row"></div>
-
-            </div>
-        </section>
-    </div>
-
-    <!-- <section class="row servicos">
-        <div class="container">
-            <div class="col">
-                <p class="h1 text-center azul-claro">SERVIÇOS</p><br>
-                <h4>
-                    <ul>
-                        <li>Criação e manutenção de websites em geral</li>
-                        <li>Produção de artes digitais</li>
-                    </ul>
-                </h4>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- <section class="row ferramentas text-dark">
-        <div class="container">
-            <div class="col">
-                <h1>FERRAMENTAS QUE USO EM DIVERSOS PROJETOS</h1>
-                <p class="h4 cursiva">para os curiosos</p><br>
-                <div class="row">
-                    <div class="col-md-6">
-                        <button class="accordion">Gestão de Projetos</button>
-                        <div class="panel">
-                                <ul>
-                                    <li>PDCA</li>
-                                    <li>5W3H</li>
-                                    <li>Business Model Canvas</li>
-                                    <li>Kanban</li>
-                                    <li>Trello</li>
-                                    <li>Git</li>
-                                    <li>Github</li>
-                                    <li>Google Drive</li>
-                                </ul>
-                        </div>
-                        <button class="accordion">Design Gráfico</button>
-                        <div class="panel">
-                            <ul>
-                                <li>Fundamentos do design</li>
-                                <li>Photoshop</li>
-                                <li>Illustrator</li>
-                                <li>Canva.com</li>
-                                <li>PowerPoint</li>
-                                <li>Google slides</li>
-                            </ul>
-                        </div>
-                        <button class="accordion">Desenvolvimento Web</button>
-                        <div class="panel">
-                            <ul>
-                                <li>HTML 5</li>
-                                <li>CSS 3</li>
-                                <li>Javascript</li>
-                                <li>PHP 7</li>
-                                <li>MySQL</li>
-                                <li>Jquery</li>
-                                <li>Bootstrap</li>
-                                <li>Materialize</li>
-                                <li>Wordpress</li>
-                                <li>Elementor</li>
-                                <li>Animate.css</li>
-                                <li>Icons 8</li>
-                                <li>WhatFont</li>
-                                <li>ColorZilla</li>
-                                <li>Git e Github</li>
-                                <li>Github pages</li>
-                            </ul>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <section class="row contato text-center">
-        <div class="container">
-            <p class="h1 text-white">ENTRE EM CONTATO</p>
-            <p class="h4 text-white cursiva">Vamos fazer uma parceria!</p><br>
-            <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-2" style="margin-bottom: 30px;">
-                    <a href="https://wa.me/message/CCVIFEIE4CKLP1" target="_blank">
-                        <svg style="fill:#FFFF99;;" width="64" height="64" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M 1000 487C 1000 756 780 975 509 975C 428 975 347 955 276 917C 276 917 17 999 17 999C 16 1000 14 1000 13 1000C 10 1000 6 999 4 996C 0 993 -1 987 1 983C 1 983 85 734 85 734C 41 660 18 574 18 487C 18 219 238 0 509 0C 780 0 1000 219 1000 487C 1000 487 1000 487 1000 487M 120 487C 120 569 145 647 194 714C 196 717 197 722 196 726C 196 726 154 849 154 849C 154 849 284 808 284 808C 285 808 286 807 288 807C 290 807 293 808 295 810C 358 851 432 873 509 873C 723 873 898 700 898 487C 898 275 723 102 509 102C 294 102 120 275 120 487C 120 487 120 487 120 487M 406 280C 420 314 435 349 449 384C 451 409 429 426 416 444C 401 462 435 481 444 498C 479 537 521 572 572 590C 589 574 602 553 619 535C 640 520 665 540 685 548C 703 557 722 566 740 575C 768 581 768 614 762 636C 756 678 716 705 679 717C 622 731 564 708 512 687C 416 645 344 563 290 476C 260 425 251 359 281 306C 294 282 317 266 344 263C 352 261 361 259 370 259C 385 259 399 264 406 280C 406 280 406 280 406 280"/></svg>
-                        <p class="h4">WhatsApp</p>
-                    </a>
-                </div>
-                <div class="col-sm-1"></div>
-                <div class="col-sm-2" style="margin-bottom: 30px;">
-                    <a href="https://www.instagram.com/daniel_attias_/" target="_blank">
-                        <svg style="fill:#FFFF99;;" width="64" height="64" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M 503 25C 631 25 647 26 697 28C 748 30 782 38 812 50C 843 62 870 78 896 105C 922 131 938 157 950 188C 962 218 970 253 972 303C 975 353 975 369 975 498C 975 626 975 642 972 693C 970 743 962 777 950 807C 938 838 922 865 896 891C 870 917 843 934 812 946C 782 957 748 965 698 968C 647 970 631 970 503 970C 374 970 358 970 308 968C 257 965 223 957 193 946C 162 934 136 917 109 891C 83 865 67 838 55 807C 43 777 35 743 33 693C 31 642 30 626 30 498C 30 369 31 353 33 303C 35 253 43 218 55 188C 67 157 83 131 109 105C 136 78 162 62 193 50C 223 38 258 30 308 28C 358 26 374 25 503 25C 503 25 503 25 503 25M 460 110C 372 110 355 111 312 113C 266 115 241 123 224 129C 202 138 186 148 170 165C 153 181 143 197 134 219C 128 236 120 261 118 307C 116 356 115 371 115 498C 115 624 116 639 118 689C 120 735 128 760 134 776C 143 798 153 814 170 831C 186 847 202 857 224 866C 241 872 266 880 312 882C 362 885 377 885 503 885C 629 885 644 885 694 882C 740 880 765 873 781 866C 804 857 819 847 836 831C 852 814 863 798 871 776C 878 760 885 735 887 689C 890 639 890 624 890 498C 890 372 890 357 887 307C 885 261 878 236 871 219C 863 197 852 181 836 165C 819 148 804 138 781 129C 765 123 740 115 694 113C 644 111 629 110 503 110C 487 110 473 110 460 110C 460 110 460 110 460 110M 755 189C 786 189 812 214 812 246C 812 277 786 302 755 302C 724 302 698 277 698 246C 698 214 724 189 755 189C 755 189 755 189 755 189M 503 255C 637 255 745 364 745 498C 745 632 637 740 503 740C 369 740 260 632 260 498C 260 364 369 255 503 255C 503 255 503 255 503 255M 345 498C 345 585 416 655 503 655C 590 655 660 585 660 498C 660 411 590 340 503 340C 416 340 345 411 345 498C 345 498 345 498 345 498"/></svg>
-                        <p class="h4">Instagram</p>
-                    </a>
-                </div>
-                <div class="col-sm-1"></div>
-                <div class="col-sm-2">
-                    <a href="https://www.linkedin.com/in/daniel-a-323165103/" target="_blank">
-                        <svg style="fill:#FFFF99;" width="64" height="64" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M 75 0C 75 0 75 0 75 0C 33 0 0 33 0 75C 0 75 0 925 0 925C 0 967 33 1000 75 1000C 75 1000 925 1000 925 1000C 967 1000 1000 967 1000 925C 1000 925 1000 75 1000 75C 1000 33 967 0 925 0C 925 0 75 0 75 0M 336 332C 336 332 336 789 336 789C 336 789 211 789 211 789C 211 789 211 332 211 332C 211 332 336 332 336 332M 346 206C 346 206 346 206 346 206C 346 247 313 280 273 280C 233 280 201 247 201 206C 201 166 233 133 273 133C 313 133 346 166 346 206M 834 508C 834 508 834 789 834 789C 834 789 709 789 709 789C 709 789 709 556 709 556C 709 416 543 427 543 556C 543 556 543 789 543 789C 543 789 419 789 419 789C 419 789 419 332 419 332C 419 332 543 332 543 332C 543 332 543 406 543 406C 601 298 834 290 834 508"/></svg>
-                        <p class="h4">Linkedin</p>
-                    </a>
-                </div>
-                <div class="col-sm-2"></div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="row rodape">
-        <div class="container">
-            <div class="text-light text-right" style="margin-bottom: 15px;">
-                Este website foi desenvolvido por Daniel Attias - 2020.
-                <a href="#top">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
-                      </svg>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    
-    <script type="text/javascript">
-        let originalProjRecentes = `
-    <div class="col-sm">
-        <div class="box-port">
-        <img src="portfolio/post5.png">
-            <p class="descricaoProjeto"><b>Resumo do material:</b><br> Carrossel no Feed do Instagram<br><b>Ferramenta:</b> PowerPoint</p>
-        </div>
-    </div>
-    <div class="col-sm">
-        <div class="box-port">
-            <img src="portfolio/post1.png">
-            <p class="descricaoProjeto"><b>Resumo do material:</b><br> Carrossel no Feed do Instagram<br><b>Ferramenta:</b> Photoshop</p>
-        </div>
-    </div>
-    <div class="col-sm">
-        <div class="box-port">
-            <img src="portfolio/post2.png">
-            <p class="descricaoProjeto"><b>Resumo do material:</b><br> Carrossel no Feed do Instagram<br><b>Ferramenta:</b> PowerPoint</p>
-        </div>
-    </div>`;
-
-let originalArtDigital = `
-    <div class="col-sm">
-        <div class="box-port">
-            <img src="portfolio/banner_cievs.png">
-            <p class="descricaoProjeto"><b>Resumo do material:</b><br> Banner Digital<br><b>Ferramenta:</b> Photoshop</p>
-        </div>
-    </div>
-    <div class="col-sm">
-        <div class="box-port">
-            <img src="portfolio/anuncio_thiago.png">
-            <p class="descricaoProjeto"><b>Resumo do material:</b><br> Status no WhatsApp e Story no Instagram<br><b>Ferramenta:</b> Photoshop</p>
-        </div>
-    </div>`;
-    
-let originalArtImpress = `
-    <div class="col-sm">
-        <div class="box-port">
-            <img src="portfolio/CapaRelatorioAnualGestão.png">
-            <p class="descricaoProjeto"><b>Resumo do material:</b><br> Capa<br><b>Ferramenta:</b> Photoshop</p>
-        </div>
-    </div>
-    <div class="col-sm">
-        <div class="box-port">
-            <img src="portfolio/CapaPlanoDeContingenciaNovoCoronavírus.png">
-            <p class="descricaoProjeto"><b>Resumo do material:</b><br> Capa<br><b>Ferramenta:</b> Illustrator</p>
-        </div>
-    </div>
-    <div class="col-sm">
-        <div class="box-port">
-            <img src="portfolio/folderCievsExterno.png">
-            <p class="descricaoProjeto"><b>Resumo do material:</b><br> Folder<br><b>Ferramenta:</b> Photoshop</p>
-        </div>
-    </div>`;
-    
-let originalWebSites = `
-    <div class="col-sm">
-        <div class="box-port">
-            <img src="portfolio/UBS.png">
-            <p class="descricaoProjeto"><b>Resumo do material:</b><br> Links úteis para otimizar o andamento dos trabalhos internos inerentes de uma Unidade Básica de Saúde em Porto Velho-RO.<br><br><b>Ferramentas:</b> Bootstrap, HTML, CSS.
-            <br><br><b>Ano:</b> 2017.
-            </p>
-        </div>
-    </div>
-    <div class="col-sm">
-        <div class="box-port">
-            <img src="portfolio/geradm.png">
-            <p class="descricaoProjeto"><b>Resumo do material:</b><br> Links úteis para otimizar o andamento dos trabalhos internos inerentes ao setor onde estagiava no Detran-RO.
-            <br><br><b>Ferramentas:</b> HTML, CSS, JavaScript, Sublime Text, notepad.
-            <br><br><b>Ano:</b> 2016.</p>
-        </div>
-    </div>
-    <div class="col-sm">
-        <div class="box-port">
-            <img src="portfolio/divadm.png">
-            <p class="descricaoProjeto"><b>Resumo do material:</b><br> Links úteis para otimizar o andamento dos trabalhos internos inerentes ao setor onde estagiava no Detran-RO.
-            <br><br><b>Ferramentas:</b> HTML, CSS, JavaScript, Sublime Text, notepad.
-            <br><br><b>Ano:</b> 2016.</p>
-        </div>
-    </div>`;
-
-printProjRecentes();
-
-function printProjRecentes() {
-    document.getElementById("view-portfolio").innerHTML = originalProjRecentes;
-    document.getElementById("link-projrecentes").style.borderColor = "#fbff00";
-    document.getElementById("link-artdigital").style.borderColor = "";
-    document.getElementById("link-artimpress").style.borderColor = "";
-    document.getElementById("link-websites").style.borderColor = "";
-}
-function printArtDigital(){
-    document.getElementById("view-portfolio").innerHTML = originalArtDigital;
-    document.getElementById("link-projrecentes").style.borderColor = "";
-    document.getElementById("link-artdigital").style.borderColor = "#fbff00";
-    document.getElementById("link-artimpress").style.borderColor = "";
-    document.getElementById("link-websites").style.borderColor = "";
-}
-function printArtImpress(){
-    document.getElementById("view-portfolio").innerHTML = originalArtImpress;
-    document.getElementById("link-projrecentes").style.borderColor = "";
-    document.getElementById("link-artdigital").style.borderColor = "";
-    document.getElementById("link-artimpress").style.borderColor = "#fbff00";
-    document.getElementById("link-websites").style.borderColor = "";
-}
-function printWebSites(){
-    document.getElementById("view-portfolio").innerHTML = originalWebSites;
-    document.getElementById("link-projrecentes").style.borderColor = "";
-    document.getElementById("link-artdigital").style.borderColor = "";
-    document.getElementById("link-artimpress").style.borderColor = "";
-    document.getElementById("link-websites").style.borderColor = "#fbff00";
-}
-
-let acc = document.getElementsByClassName("accordion");
-
-for (let i = 0; i < acc.length; i++)
-{
-    acc[i].addEventListener("click", function()
-    {
-        this.classList.toggle("active");
-        let panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-        } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-        } 
-    });
-}
-
-function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
-
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
-
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    } else {
-      reveals[i].classList.remove("active");
-    }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Daniel Attias é professor de computação, instrutor de informática e desenvolvedor em Porto Velho, Rondônia. Conheça sua experiência, formação e projetos.">
+  <meta name="keywords" content="professor de computação, instrutor de informática, desenvolvedor web, professor de programação, profissional de tecnologia, Porto Velho, Rondônia, Daniel Attias">
+  <meta name="author" content="Daniel Attias de Oliveira">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#0d1b2a">
+  <link rel="canonical" href="https://attiasdan.github.io/">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://attiasdan.github.io/">
+  <meta property="og:site_name" content="Daniel Attias">
+  <meta property="og:title" content="Daniel Attias | Professor de Computação e Desenvolvedor">
+  <meta property="og:description" content="Professor de computação, instrutor de informática e desenvolvedor em Porto Velho. Experiência profissional, formação e projetos.">
+  <meta property="og:image" content="https://attiasdan.github.io/assets/img/perfil-daniel-2026.webp">
+  <meta property="og:image:alt" content="Retrato profissional de Daniel Attias">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Daniel Attias | Professor de Computação e Desenvolvedor">
+  <meta name="twitter:description" content="Conheça minha trajetória em educação, informática e desenvolvimento de software.">
+  <meta name="twitter:image" content="https://attiasdan.github.io/assets/img/perfil-daniel-2026.webp">
+  <link rel="preload" href="./assets/img/perfil-daniel-2026.webp" as="image" type="image/webp" fetchpriority="high">
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Daniel Attias | Professor de Computação e Desenvolvedor em Rondônia</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Daniel Attias de Oliveira",
+    "alternateName": "Daniel Attias",
+    "url": "https://attiasdan.github.io/",
+    "image": "https://attiasdan.github.io/assets/img/perfil-daniel-2026.webp",
+    "jobTitle": "Professor de Computação e Desenvolvedor",
+    "description": "Professor de computação, instrutor de informática e desenvolvedor com formação em Licenciatura em Computação pela Universidade Federal de Rondônia.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Porto Velho",
+      "addressRegion": "Rondônia",
+      "addressCountry": "BR"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Universidade Federal de Rondônia",
+      "sameAs": "https://www.unir.br/"
+    },
+    "knowsAbout": [
+      "Ensino de computação",
+      "Programação",
+      "Informática",
+      "Desenvolvimento web",
+      "Montagem e manutenção de computadores"
+    ],
+    "sameAs": [
+      "https://github.com/attiasdan",
+      "https://www.instagram.com/daniel_attias_/"
+    ]
   }
-}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Daniel Attias",
+    "alternateName": "Portfólio de Daniel Attias",
+    "url": "https://attiasdan.github.io/"
+  }
+  </script>
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="space-layer space-layer-back" aria-hidden="true"></div>
+  <div class="space-layer space-layer-front" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Daniel Attias, início"><span>&lt;</span>DA<span>/&gt;</span></a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#trajetoria">Trajetória</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
 
-window.addEventListener("scroll", reveal);
-    </script>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">Porto Velho, Rondônia · Brasil</p>
+        <h1>Ensino computação.<br><em>Construo caminhos</em><br>com tecnologia.</h1>
+        <p class="hero-intro">Sou Daniel Attias, licenciado em Computação pela UNIR, professor e desenvolvedor. Minha trajetória conecta sala de aula, programação e soluções digitais.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projetos">Conheça meu trabalho</a>
+          <a class="button button-ghost" href="https://github.com/attiasdan" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit orbit-one" aria-hidden="true"><i></i></div>
+        <div class="orbit orbit-two" aria-hidden="true"><i></i></div>
+        <div class="portrait-frame">
+          <img src="./assets/img/perfil-daniel-2026.webp" alt="Retrato profissional de Daniel Attias" width="768" height="960" fetchpriority="high">
+        </div>
+        <div class="hero-note">
+          <span>Atuação</span>
+          <strong>Educação + Tecnologia</strong>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#sobre" aria-label="Ir para a seção sobre">Role para conhecer <span>↓</span></a>
+    </section>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="./assets/css/bootstrap/js/bootstrap.min.js"></script>
+    <section class="section about reveal-section" id="sobre">
+      <div class="section-heading">
+        <p class="eyebrow">Sobre mim</p>
+        <h2>Tecnologia faz mais sentido quando alguém consegue aprender com ela.</h2>
+      </div>
+      <div class="about-grid">
+        <p class="lead">Minha formação em Licenciatura em Computação uniu duas áreas que sempre caminharam juntas na minha história: desenvolver soluções e ajudar pessoas a compreender a tecnologia.</p>
+        <div class="about-details">
+          <p>Atuei com ensino de informática, montagem e manutenção de computadores, programação básica e monitoria acadêmica. Também acumulei experiências em tecnologia da informação, administração e produção visual.</p>
+          <div class="facts">
+            <div><strong>33</strong><span>repositórios públicos</span></div>
+            <div><strong>10 anos</strong><span>entre as primeiras experiências e 2026</span></div>
+            <div><strong>UNIR</strong><span>Licenciatura em Computação</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section journey reveal-section" id="trajetoria">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">Caminhada profissional</p>
+          <h2>Experiências que formaram meu jeito de ensinar e criar.</h2>
+        </div>
+        <p>Da assistência administrativa à docência em computação: cada etapa ampliou minha visão sobre pessoas, processos e tecnologia.</p>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item current">
+          <time>2025 — 2026</time>
+          <div><p class="tag">Ensino profissionalizante</p><h3>Instrutor de Informática</h3><p>Center Cursos · Formação prática em informática para estudantes de cursos profissionalizantes.</p></div>
+        </article>
+        <article class="timeline-item">
+          <time>2024 — 2025</time>
+          <div><p class="tag">Docência</p><h3>Professor de Computação</h3><p>Aprender Mais · Aulas de montagem e manutenção de computadores e programação básica.</p></div>
+        </article>
+        <article class="timeline-item">
+          <time>2023</time>
+          <div><p class="tag">Ensino superior</p><h3>Monitor Acadêmico de Programação</h3><p>Universidade Federal de Rondônia · Apoio à aprendizagem de programação durante a graduação.</p></div>
+        </article>
+        <article class="timeline-item">
+          <time>2021 — 2022</time>
+          <div><p class="tag">Formação docente</p><h3>Estágios de Docência em Computação I–IV</h3><p>IFRO e Escola Brasília · Prática curricular em diferentes contextos de ensino de computação.</p></div>
+        </article>
+        <article class="timeline-item">
+          <time>2019 — 2020</time>
+          <div><p class="tag">Tecnologia da informação</p><h3>Estagiário de TI</h3><p>AGEVISA-RO · Experiência em tecnologia aplicada ao serviço público de saúde.</p></div>
+        </article>
+        <article class="timeline-item">
+          <time>2016</time>
+          <div><p class="tag">Início profissional</p><h3>Assistente Administrativo</h3><p>DETRAN-RO · Estágio de ensino médio e primeiro contato com soluções digitais para rotinas internas.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects reveal-section" id="projetos">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">Projetos selecionados</p>
+          <h2>Aprendizado transformado em código.</h2>
+        </div>
+        <p>Uma seleção de projetos autorais e acadêmicos publicados no GitHub.</p>
+      </div>
+
+      <div class="project-grid">
+        <a class="project-card featured" href="https://github.com/attiasdan/recursos-multimidia" target="_blank" rel="noreferrer">
+          <span class="project-number">01</span>
+          <div>
+            <p class="tag">Educação · Web</p>
+            <h3>Recursos Multimídia</h3>
+            <p>Hub que reúne materiais em vídeo, texto, animações e outros formatos para facilitar o acesso a recursos de aprendizagem.</p>
+            <span class="project-link">Ver repositório ↗</span>
+          </div>
+        </a>
+        <a class="project-card" href="https://github.com/attiasdan/beacademy-devstart-projeto-individual" target="_blank" rel="noreferrer">
+          <span class="project-number">02</span>
+          <div>
+            <p class="tag">PHP · Aplicação web</p>
+            <h3>Banco de Talentos</h3>
+            <p>Sistema desenvolvido como projeto individual no programa DevStart da be.academy.</p>
+            <span class="project-link">Ver repositório ↗</span>
+          </div>
+        </a>
+        <a class="project-card" href="https://github.com/attiasdan/crowdfunding-idw" target="_blank" rel="noreferrer">
+          <span class="project-number">03</span>
+          <div>
+            <p class="tag">PHP · Projeto autoral</p>
+            <h3>Crowdfunding</h3>
+            <p>Protótipo de uma plataforma de financiamento coletivo, explorando lógica de negócio e desenvolvimento web.</p>
+            <span class="project-link">Ver repositório ↗</span>
+          </div>
+        </a>
+        <a class="project-card" href="https://github.com/attiasdan/crowdfunding" target="_blank" rel="noreferrer">
+          <span class="project-number">04</span>
+          <div>
+            <p class="tag">C++ · Lógica</p>
+            <h3>Simulação de Crowdfunding</h3>
+            <p>Versão em C++ de um sistema de financiamento coletivo, com foco em fundamentos de programação.</p>
+            <span class="project-link">Ver repositório ↗</span>
+          </div>
+        </a>
+      </div>
+      <div class="all-projects">
+        <a class="text-link" href="https://github.com/attiasdan?tab=repositories" target="_blank" rel="noreferrer">Explorar todos os projetos no GitHub <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="section visual-work reveal-section">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">Comunicação visual</p>
+          <h2>Experiência além do código.</h2>
+        </div>
+        <p>Peças produzidas para comunicação institucional e mídias digitais.</p>
+      </div>
+      <div class="gallery">
+        <figure class="gallery-wide"><img src="./portfolio/banner-cievs.webp" alt="Banner digital desenvolvido para o CIEVS" width="800" height="1200" loading="lazy" decoding="async"><figcaption>Banner digital · CIEVS</figcaption></figure>
+        <figure><img src="./portfolio/capa-relatorio-anual-gestao.webp" alt="Capa de relatório anual de gestão" width="795" height="1123" loading="lazy" decoding="async"><figcaption>Relatório Anual de Gestão</figcaption></figure>
+        <figure><img src="./portfolio/conteudo-midia-social.webp" alt="Carrossel para mídia social" width="800" height="800" loading="lazy" decoding="async"><figcaption>Conteúdo para mídia social</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="contact reveal-section" id="contato">
+      <p class="eyebrow">Vamos conversar</p>
+      <h2>Educação, tecnologia ou uma boa ideia para tirar do papel?</h2>
+      <p>Estou aberto a conexões, colaborações e oportunidades profissionais.</p>
+      <div class="contact-links">
+        <a class="button button-light" href="https://wa.me/556993025786" target="_blank" rel="noreferrer">Falar no WhatsApp ↗</a>
+        <a href="https://github.com/attiasdan" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a href="https://www.instagram.com/daniel_attias_/" target="_blank" rel="noreferrer">Instagram ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Daniel Attias de Oliveira</p>
+    <p>Professor de Computação · Desenvolvedor</p>
+    <p>© <span id="year">2026</span></p>
+  </footer>
+  <script src="./assets/js/script.js" defer></script>
 </body>
-
 </html>
