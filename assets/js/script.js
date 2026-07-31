@@ -21,6 +21,8 @@ const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").match
 const allowParallax = window.matchMedia("(pointer: fine) and (min-width: 900px)").matches;
 
 if (!reduceMotion) {
+  document.documentElement.classList.add("motion-ready");
+
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
