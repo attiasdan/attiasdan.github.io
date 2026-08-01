@@ -17,6 +17,57 @@ navigation.querySelectorAll("a").forEach((link) => {
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
+const galleryItems = Array.from(document.querySelectorAll(".gallery-item"));
+const lightbox = document.querySelector(".lightbox");
+const lightboxImage = lightbox.querySelector(".lightbox-stage img");
+const lightboxTitle = document.getElementById("lightbox-title");
+const lightboxClose = lightbox.querySelector(".lightbox-close");
+const lightboxPrevious = lightbox.querySelector(".lightbox-prev");
+const lightboxNext = lightbox.querySelector(".lightbox-next");
+let activeGalleryIndex = 0;
+let galleryTrigger;
+
+const showGalleryItem = (index) => {
+  activeGalleryIndex = (index + galleryItems.length) % galleryItems.length;
+  const item = galleryItems[activeGalleryIndex];
+  lightboxImage.src = item.dataset.full;
+  lightboxImage.alt = item.dataset.title;
+  lightboxTitle.textContent = item.dataset.title + " · " + (activeGalleryIndex + 1) + " de " + galleryItems.length;
+};
+
+const openLightbox = (index, trigger) => {
+  galleryTrigger = trigger;
+  showGalleryItem(index);
+  lightbox.hidden = false;
+  document.body.classList.add("lightbox-open");
+  lightboxClose.focus();
+};
+
+const closeLightbox = () => {
+  lightbox.hidden = true;
+  lightboxImage.removeAttribute("src");
+  document.body.classList.remove("lightbox-open");
+  galleryTrigger?.focus();
+};
+
+galleryItems.forEach((item, index) => {
+  item.addEventListener("click", () => openLightbox(index, item));
+});
+
+lightboxClose.addEventListener("click", closeLightbox);
+lightboxPrevious.addEventListener("click", () => showGalleryItem(activeGalleryIndex - 1));
+lightboxNext.addEventListener("click", () => showGalleryItem(activeGalleryIndex + 1));
+lightbox.addEventListener("click", (event) => {
+  if (event.target === lightbox) closeLightbox();
+});
+
+document.addEventListener("keydown", (event) => {
+  if (lightbox.hidden) return;
+  if (event.key === "Escape") closeLightbox();
+  if (event.key === "ArrowLeft") showGalleryItem(activeGalleryIndex - 1);
+  if (event.key === "ArrowRight") showGalleryItem(activeGalleryIndex + 1);
+});
+
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const allowParallax = window.matchMedia("(pointer: fine) and (min-width: 900px)").matches;
 
