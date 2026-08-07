@@ -30,6 +30,7 @@ let galleryTrigger;
 const showGalleryItem = (index) => {
   activeGalleryIndex = (index + galleryItems.length) % galleryItems.length;
   const item = galleryItems[activeGalleryIndex];
+  lightboxImage.decoding = "async";
   lightboxImage.src = item.dataset.full;
   lightboxImage.alt = item.dataset.title;
   lightboxTitle.textContent = item.dataset.title + " · " + (activeGalleryIndex + 1) + " de " + galleryItems.length;
